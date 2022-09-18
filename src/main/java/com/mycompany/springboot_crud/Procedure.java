@@ -41,4 +41,9 @@ public class Procedure {
     // create a new controller class for the user module (User Controller)
     // create the page rendered by the handler method of the user controller class
     // once this html page is created run the test add method and add one user
+
+    //Step 9
+    // code the add new user function
+    // create the second handler method(showNewForm()) in the user controller class for taking the new user details
+    // create the new handler method to save the details taken in the above method to the database
 }
