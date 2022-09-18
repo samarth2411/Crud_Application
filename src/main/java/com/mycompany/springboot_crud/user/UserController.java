@@ -53,10 +53,23 @@ public class UserController {
 
             return "user_form";
         } catch (UserNotFoundExceptiion e) {
-            redirectAttributes.addFlashAttribute("message", "The User Has Been Saved Successfully");
+            redirectAttributes.addFlashAttribute("message", e.getMessage());
 
             return "redirect:/users";
         }
+    }
+
+    @GetMapping("/users/delete/{id}")
+    public String deleteUser(@PathVariable("id") Integer id, RedirectAttributes redirectAttributes) {
+        try {
+            service.delete(id);
+            redirectAttributes.addFlashAttribute("message", "The user id " + id + " has been successfully deleted");
+        } catch (UserNotFoundExceptiion e) {
+            redirectAttributes.addFlashAttribute("message", e.getMessage());
+
+
+        }
+        return "redirect:/users";
     }
 }
 

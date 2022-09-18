@@ -28,4 +28,12 @@ public class UserService {
         throw new UserNotFoundExceptiion("Could not find any user with id " + id);
 
     }
+
+    public void delete(Integer id) throws UserNotFoundExceptiion {
+        Long count = repo.countById(id);
+        if (count == null || count == 0) {
+            throw new UserNotFoundExceptiion("Could not find any user with id " + id);
+        }
+        repo.deleteById(id);
+    }
 }

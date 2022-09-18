@@ -51,4 +51,10 @@ public class Procedure {
     // code edit user function
     // create a get method in the userservice class to get the user by id
     // create a handler method in the user controller class to handle the request of edit
+
+    //Step 10
+    // code Delete User Function
+    // create a delete method in the userservice class to delete the user by id
+    // create a method countById() in UserRepository interface
+    // in user controller class create the handler method deleteUser() for deleting a user
 }
