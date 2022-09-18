@@ -37,4 +37,8 @@ public class Procedure {
 
     //Step 8
     // Now code the front page (User Listing Page)
+    // create a business class (UserService)
+    // create a new controller class for the user module (User Controller)
+    // create the page rendered by the handler method of the user controller class
+    // once this html page is created run the test add method and add one user
 }
