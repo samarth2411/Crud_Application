@@ -27,4 +27,14 @@ public class Procedure {
     // 1) Code User entity class that maps to users table in  the database (after this create a new java interface for the user repository )
     // 2) Code UserRepository interface to use APIs of Spring Data JPA this interface will extend the crud repository provided by the spring data jpa
     // 3) Run the application to let Hibernate creates the table
+
+    // Step 7 (FOR TEST DRIVEN DEVELOPMENT)
+    // Write some code unit tests for data acess layer
+    // use spring data jpa test
+    // test crud operations on users
+    // run test against real database
+    // CREATE A TEST CLASS IN THE TEST FOLDER
+
+    //Step 8
+    // Now code the front page (User Listing Page)
 }
