@@ -23,5 +23,8 @@ public class Procedure {
     // in order to use bootstrap we need to add some additional dependencies
 
     //Step 6
-    // Code the data access layer (Repository Layer)
+    // Code the data access layer (Repository Layer) this layer is for the user module
+    // 1) Code User entity class that maps to users table in  the database (after this create a new java interface for the user repository )
+    // 2) Code UserRepository interface to use APIs of Spring Data JPA this interface will extend the crud repository provided by the spring data jpa
+    // 3) Run the application to let Hibernate creates the table
 }
