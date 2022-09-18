@@ -5,16 +5,17 @@
  <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
        name="viewport">
  <meta content="ie=edge" http-equiv="X-UA-Compatible">
- <title>Add new User</title>
+ <title>[[${pageTitle}]]</title>
  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" type="text/css"/>
 </head>
 <body>
 
 <div class="container-fluid">
- <div class="text-center"><h2>Add New User</h2></div>
+ <div class="text-center"><h2>[[${pageTitle}]]</h2></div>
 
  <form method="post" style="max-width: 700px; margin: 0 auto;" th:action="@{/users/save}"
        th:object="${user}">
+  <input th:field="*{id}" type="hidden">
 
   <div class="border border-secondary rounded p-3">
    <div class="form-group row">

@@ -46,4 +46,9 @@ public class Procedure {
     // code the add new user function
     // create the second handler method(showNewForm()) in the user controller class for taking the new user details
     // create the new handler method to save the details taken in the above method to the database
+
+    //Step 10
+    // code edit user function
+    // create a get method in the userservice class to get the user by id
+    // create a handler method in the user controller class to handle the request of edit
 }
